@@ -6,7 +6,9 @@ import argparse
 logger = logging.getLogger(__name__)
 
 img_formats = ["jpg", "jpeg", "png"]
-input_bucket = "kvs-rekognitionbucket"
+
+# change your input/output bucket
+input_bucket = "kvs-rekognitionbucket" 
 output_bucket = "kvs-rekognition-output"
 
 s3 = boto3.client("s3")
